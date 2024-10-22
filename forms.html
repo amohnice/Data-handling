@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Handling</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <h1>Form Data Handling</h1>
+    <form id="userForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <span id="emailError" class="error"></span>
+        </div>
+        <div id="contactMethodsContainer">
+            <label>Preferred Contact Method:</label>
+          <label>
+            <select class="contactMethod" required>
+                <option value="">Select</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+          </label>
+          <button type="button" id="addContactMethod">Add Another Method</button>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" id="terms" required> I accept terms and conditions
+            </label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Form Summary</h2>
+    <div id="formSummary"></div>
+
+    <script src="forms.js"></script>
+</body>
+</html>
